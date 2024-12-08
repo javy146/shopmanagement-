@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu button {
+  margin-right: 10px;
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-clock, .job-clock {
+  width: 45%;
+  background-color: #1a1a1a;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button.completed {
+  background-color: red;
+}
