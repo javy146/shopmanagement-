@@ -90,20 +90,37 @@
             border: none;
             color: white;
         }
+        /* Admin Panel Styling */
+        .admin-panel {
+            display: none; /* Hidden by default */
+            text-align: center;
+            margin-top: 20px;
+        }
+        .admin-panel a {
+            color: blue;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .admin-panel a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <!-- Navbar -->
     <div class="navbar">
-        <button>Time Clock</button>
-        <button>Time Clock Reports</button>
-        <button>Customers</button>
-        <button>Repair Orders</button>
-        <button>Parts</button>
-        <button>Vendors</button>
-        <button>Templates</button>
-        <button>Admin</button>
+        <button onclick="showContent()">Time Clock</button>
+        <button onclick="showContent()">Time Clock Reports</button>
+        <button onclick="showContent()">Customers</button>
+        <button onclick="showContent()">Repair Orders</button>
+        <button onclick="showContent()">Parts</button>
+        <button onclick="showContent()">Vendors</button>
+        <button onclick="showContent()">Templates</button>
+        <button onclick="showAdminPanel()">Admin</button>
     </div>
-    <div class="container">
+
+    <!-- Main Content -->
+    <div class="container content">
         <div class="dropdown">
             <label for="name-select" style="font-size: 18px;">Select your name:</label>
             <select id="name-select">
@@ -152,74 +169,8 @@
             <button>COMPLETED</button>
         </div>
     </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Interface</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: black;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-around;
-            background-color: #333;
-            padding: 10px;
-            border-bottom: 2px solid #555;
-        }
-        .navbar button {
-            background-color: black;
-            color: white;
-            border: 1px solid #555;
-            padding: 8px 15px;
-            cursor: pointer;
-        }
-        .navbar button:hover {
-            background-color: #555;
-        }
-        .admin-panel {
-            display: none; /* Hidden by default */
-            text-align: center;
-            margin-top: 20px;
-        }
-        .admin-panel a {
-            color: blue;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .admin-panel a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            display: block; /* Default content */
-        }
-    </style>
-</head>
-<body>
-    <div class="navbar">
-        <button onclick="showContent()">Time Clock</button>
-        <button onclick="showContent()">Time Clock Reports</button>
-        <button onclick="showContent()">Customers</button>
-        <button onclick="showContent()">Repair Orders</button>
-        <button onclick="showContent()">Parts</button>
-        <button onclick="showContent()">Vendors</button>
-        <button onclick="showContent()">Templates</button>
-        <button onclick="showAdminPanel()">Admin</button>
-    </div>
 
-    <div class="content">
-        <!-- Default content here -->
-        <h1>Welcome to the Main Interface</h1>
-    </div>
-
+    <!-- Admin Panel -->
     <div class="admin-panel">
         <h2>Admin Options</h2>
         <p>
