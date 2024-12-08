@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="time">9:06</span>
+    </div>
+    <div class="menu">
+      <button>Time Clock</button>
+      <button>Time Clock Reports</button>
+      <button>Customers</button>
+      <button>Repair Orders</button>
+      <button>Parts</button>
+      <button>Vendors</button>
+      <button>Templates</button>
+      <button>Admin</button>
+    </div>
+    <div class="content">
+      <div class="time-clock">
+        <h2>Time Clock</h2>
+        <table>
+          <tr>
+            <th>Date In</th>
+            <th>Time In</th>
+            <th>Date Out</th>
+            <th>Time Out</th>
+          </tr>
+        </table>
+        <button>PUNCH IN</button>
+      </div>
+      <div class="job-clock">
+        <h2>Job Clock</h2>
+        <table>
+          <tr>
+            <th>OR#</th>
+            <th>Job</th>
+            <th>Time In</th>
+            <th>Time Out</th>
+            <th>Operation</th>
+            <th>Notes</th>
+          </tr>
+        </table>
+        <button>PUNCH IN</button>
+        <button class="completed">COMPLETED</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
